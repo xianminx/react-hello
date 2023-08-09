@@ -1,0 +1,56 @@
+.dnd-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+    cursor: pointer;
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px;
+    transition: background-color 85ms ease-in, border-color 85ms ease-in;
+} 
+.dnd-item:hover {
+    background-color: #f4f5f7;
+}
+.dnd-item.dragging {
+    border-color: #000;
+    background-color: #f4f5f7;
+}
+.dnd-item.placeholder {
+    background-color: transparent;
+    border: 1px dashed #ccc;
+    margin-bottom: 0;
+    padding: 0;
+}
+.dnd-item .current {
+    background-color: #f4f5f7;
+}
+.drag-n-drop {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 8px;
+}
+.dnd-group {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.group-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.group-title:first-child {
+    margin-top: 0;
+}
+.group-title:last-child {
+    margin-bottom: 0;
+}
+.group-title .icon {
+    margin-right: 8px;
+}
+
+/* Path: src/rxhooks/style.css */
